@@ -1,9 +1,7 @@
 ---
-layout: page
+layout: default
 title: "about"
 ---
-
-![Hey-Human!](/assets/img/hey-human-banner.svg)
 
 # Acerca de Hey-Human!
 
