@@ -10,7 +10,7 @@ Hey-Human! es una organización dedicada a promover la conexión humana y la emp
 
 # Quiénes somos?
 
-[about](/about)
+[about](./about)
 
 ## Últimas noticias
 
