@@ -2,6 +2,7 @@
 layout: home
 title: "Inicio"
 ---
+![Hey-Human!](/assets/img/hey-human-banner.jpg)
 
 # ¡Bienvenido a Hey-Human!
 
