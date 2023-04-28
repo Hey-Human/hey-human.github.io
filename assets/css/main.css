@@ -52,7 +52,7 @@
   
   /* Banner */
   .banner {
-    max-width: 30%; /* Ajusta este valor según tus preferencias */
+    max-width: 100%; /* Ajusta este valor según tus preferencias */
     margin: 0 auto; /* Centra el banner horizontalmente */
   }
   
