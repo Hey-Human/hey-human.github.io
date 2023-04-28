@@ -1,51 +1,120 @@
-# Configuración del sitio
+###########################################################
+### Welcome to Hey-Human! ###
+###########################################################
+
+############################
+# --- Required options --- #
+############################
+
+# Name of website
 title: Hey-Human!
-email: severinidiegoignacio@gmail.com
-description: >-
-  Hey-Human! es una organización comprometida con fomentar la conexión humana y la empatía en un mundo cada vez más digitalizado.
-baseurl: "" # el subpath de tu sitio, por ejemplo: /blog/
-url: "https://www.hey-human.org" # el URL base de tu sitio
-twitter_username: hey_human_org
-github_username: tres-caras
 
-# Configuración del autor
-author:
-  name: Diego Ignacio Severini
-  email: diegoignacioseverini@mail.com
+# Your name to show in the footer
+author: Hey-Human! Team
+
+###############################################
+# --- List of links in the navigation bar --- #
+###############################################
+
+navbar-links:
+  Quiénes Somos: "quienes-somos"
+  Eventos: "eventos"
+  Contacto: "contacto"
+
+################
+# --- Logo --- #
+################
+
+# Image to show in the navigation bar - works best with a square image
+# Remove this parameter if you don't want an image in the navbar
+avatar: "/assets/img/avatar-icon.png"
+
+# By default, the image is cut into a circle. You can disable this behaviour by setting 'round-avatar: false'
+round-avatar: true
+
+#####################################
+# --- Footer social media links --- #
+#####################################
+
+# Select the social network links that you want to show in the footer.
+# Uncomment the links you want to show and add your information to each one.
+social-network-links:
+  email: "contacto@hey-human.org"
   twitter: hey_human_org
-  github: hey-human
+  facebook: heyhumanorg
+  instagram: hey_human_org
+  linkedin: hey-human-org
 
-# Configuración del tema
-# theme: jekyll-theme-minimal
-remote_theme: benbalter/retlab
-plugins:
-- jekyll-remote-theme
-# Configuración del menú principal
-header_pages:
-  - index.md
-  - quienes-somos.md
-  - eventos.md
-  - contacto.md
+# If you want your website to generate an RSS feed, provide a description
+# The URL for the feed will be https://<your_website>/feed.xml
+rss-description: Hey-Human! promoviendo la conexión humana y la empatía en un mundo digitalizado
 
-# Configuración de las redes sociales
-social_links:
-  twitter: https://twitter.com/hey_human_org
-  facebook: https://facebook.com/heyhumanorg
-  instagram: https://instagram.com/hey_human_org
-  linkedin: https://linkedin.com/company/hey-human-org
+###########################
+# --- General options --- #
+###########################
 
-# Configuración de Google Analytics (opcional)
-#google_analytics: UA-XXXXXXXXX-X
+# Select which social network share links to show in posts
+share-links-active:
+  twitter: true
+  facebook: true
+  linkedin: true
+  vk: false
 
-# Configuración de SEO (opcional)
-#seo:
-#  title: Hey-Human! - Fomentando la conexión humana y la empatía
-#  description: >-
-#    Únete a nuestra misión de fortalecer la interacción humana y promover la empatía en un mundo digitalizado.
-#  image: /assets/images/hey-human-og-image.jpg
-#  twitter:
-#    username: hey_human_org
-#    card: summary_large_image
-#  og:
-#    type: website
-#    site_name: Hey-Human!
+# Excerpt word length - Truncate the excerpt of each post on the feed page to the specified number of words
+excerpt_length: 50
+
+# Whether or not to show an excerpt for every blog post in the feed page
+feed_show_excerpt: true
+
+# Whether or not to show a list of tags below each post preview in the feed page
+feed_show_tags: true
+
+# Add a search button to the navbar
+post_search: true
+
+# Add a button in the footer to edit the current page. Only works if your website is hosted on GitHub
+edit_page_button: true
+
+######################################
+# --- Colours / background image --- #
+######################################
+
+# Personalize the colours in your website. Colour values can be any valid CSS colour
+
+navbar-col: "#EAEAEA"
+navbar-text-col: "#404040"
+navbar-border-col: "#DDDDDD"
+page-col: "#FFFFFF"
+text-col: "#404040"
+link-col: "#008AFF"
+hover-col: "#0085A1"
+footer-col: "#EAEAEA"
+footer-text-col: "#777777"
+footer-link-col: "#404040"
+footer-hover-col: "#0085A1"
+
+#################################
+# --- Web Analytics Section --- #
+#################################
+
+# Fill in your Google Analytics gtag.js ID to track your website using gtag
+#gtag: ""
+
+# Fill in your Google Analytics ID to track your website using Google Analytics
+#google_analytics: ""
+
+####################
+# --- Comments --- #
+####################
+
+# To use Disqus comments, sign up to https://disqus.com and fill in your Disqus shortname (NOT the userid)
+#disqus: ""
+
+# To use Facebook Comments, create a Facebook app and fill in the Facebook App ID
+#fb_comment_id: ""
+
+################
+# --- Misc --- #
+################
+
+# Ruby
