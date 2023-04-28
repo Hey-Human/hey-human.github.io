@@ -1,3 +1,49 @@
-remote_theme: benbalter/retlab
-plugins:
-- jekyll-remote-theme
+# Configuración del sitio
+title: Hey-Human!
+email: severinidiegoignacio@gmail.com
+description: >-
+  Hey-Human! es una organización comprometida con fomentar la conexión humana y la empatía en un mundo cada vez más digitalizado.
+baseurl: "" # el subpath de tu sitio, por ejemplo: /blog/
+url: "https://www.hey-human.org" # el URL base de tu sitio
+twitter_username: hey_human_org
+github_username: tres-caras
+
+# Configuración del autor
+author:
+  name: Diego Ignacio Severini
+  email: diegoignacioseverini@mail.com
+  twitter: hey_human_org
+  github: hey-human
+
+# Configuración del tema
+theme: jekyll-theme-minimal
+
+# Configuración del menú principal
+header_pages:
+  - index.md
+  - quienes-somos.md
+  - eventos.md
+  - contacto.md
+
+# Configuración de las redes sociales
+social_links:
+  twitter: https://twitter.com/hey_human_org
+  facebook: https://facebook.com/heyhumanorg
+  instagram: https://instagram.com/hey_human_org
+  linkedin: https://linkedin.com/company/hey-human-org
+
+# Configuración de Google Analytics (opcional)
+#google_analytics: UA-XXXXXXXXX-X
+
+# Configuración de SEO (opcional)
+#seo:
+#  title: Hey-Human! - Fomentando la conexión humana y la empatía
+#  description: >-
+#    Únete a nuestra misión de fortalecer la interacción humana y promover la empatía en un mundo digitalizado.
+#  image: /assets/images/hey-human-og-image.jpg
+#  twitter:
+#    username: hey_human_org
+#    card: summary_large_image
+#  og:
+#    type: website
+#    site_name: Hey-Human!
