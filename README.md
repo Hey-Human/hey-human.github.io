@@ -9,9 +9,9 @@ Somos una organización dedicada a compartir problemas y posibles soluciones que
 Nos encanta trabajar con personas apasionadas y comprometidas con nuestra misión. Si deseas contribuir a nuestro proyecto, simplemente envía una solicitud de extracción( o comunícate con nosotros a través de nuestras redes sociales cuando tengamos redes sociales ).
 
 ## Proyectos destacados
-- [Idear.io](https://github.com/Hey-Human/idear.io)
-- [Jis](https://github.com/Hey-Human/jekyll-ideas-sharing-template)
-- [tres-caras](https://github.com/Hey-Human/tres-caras)
+- [Idear.io]https://hey-human.github.io/idear.io/)
+- [Jis](https://hey-human.github.io/jekyll-ideas-sharing-template)
+- [tres-caras](https://hey-human.github.io/tres-caras/)
 
 ## Contacto
 Si tienes alguna pregunta o sugerencia, no dudes en ponerte en contacto con nosotros. Puedes encontrarnos en nuestras redes sociales o escribirnos a nuestro correo electrónico.
