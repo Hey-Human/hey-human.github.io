@@ -1,6 +1,4 @@
-
-# Hey-Human
-Bienvenido a la organización Hey-Human. Aquí encontrarás toda la información relacionada con nuestro proyecto y nuestras contribuciones a la comunidad.
+Aquí encontrarás toda la información relacionada con nuestro proyecto y nuestras contribuciones a la comunidad.
 
 ## ¿Qué es Hey-Human?
 Somos una organización dedicada a compartir problemas y posibles soluciones que mejoren la vida de las personas. En este repositorio, podrás encontrar proyectos relacionados con un fin en común.
