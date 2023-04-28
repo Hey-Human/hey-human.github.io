@@ -1,5 +1,3 @@
-title: [Hey-Human]
-description: [Organización Humana]
 
 # Hey-Human
 Bienvenido a la organización Hey-Human. Aquí encontrarás toda la información relacionada con nuestro proyecto y nuestras contribuciones a la comunidad.
