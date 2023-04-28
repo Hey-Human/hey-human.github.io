@@ -52,7 +52,8 @@
   
   /* Banner */
   .banner {
-    margin-bottom: 40px;
+    max-width: 80%; /* Ajusta este valor según tus preferencias */
+    margin: 0 auto; /* Centra el banner horizontalmente */
   }
   
   /* Headings */
