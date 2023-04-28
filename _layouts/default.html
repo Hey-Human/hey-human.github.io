@@ -12,8 +12,10 @@
   {% include navbar.html %}
   <!-- Banner SVG -->
   <div class="banner">
-    <object type="image/svg+xml" data="/assets/img/hey-human-banner.gif" width="100%" height="auto">
-    </object>
+    <img src="{{ '/assets/img/hey-human-banner.gif' | relative_url }}" alt="Hey, Human! Banner" width="100%"
+      height="auto">
+  </div>
+
   </div>
   <main>
     {{ content }}
