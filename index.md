@@ -2,11 +2,15 @@
 layout: home
 title: "Inicio"
 ---
-![Hey-Human!](/assets/img/hey-human-banner.jpg)
+![Hey-Human!](/assets/img/hey-human-banner.svg)
 
 # ¡Bienvenido a Hey-Human!
 
 Hey-Human! es una organización dedicada a promover la conexión humana y la empatía en un mundo digitalizado. Nos esforzamos por crear eventos y recursos que inspiren a las personas a ser más conscientes de sus relaciones y su entorno.
+
+# Quiénes somos?
+
+[about](/about)
 
 ## Últimas noticias
 

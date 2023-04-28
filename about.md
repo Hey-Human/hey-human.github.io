@@ -3,7 +3,7 @@ layout: page
 title: "Acerca de Hey-Human!"
 ---
 
-![Hey-Human!](/assets/img/hey-human-banner.jpg)
+![Hey-Human!](/assets/img/hey-human-banner.svg)
 
 # Acerca de Hey-Human!
 
