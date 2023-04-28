@@ -16,8 +16,10 @@ author:
   github: hey-human
 
 # Configuración del tema
-theme: jekyll-theme-minimal
-
+# theme: jekyll-theme-minimal
+remote_theme: benbalter/retlab
+plugins:
+- jekyll-remote-theme
 # Configuración del menú principal
 header_pages:
   - index.md
