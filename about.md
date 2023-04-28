@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Acerca de Hey-Human!"
+title: "about"
 ---
 
 ![Hey-Human!](/assets/img/hey-human-banner.svg)

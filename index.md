@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: default
 title: "Inicio"
 ---
 ![Hey-Human!](/assets/img/hey-human-banner.svg)
