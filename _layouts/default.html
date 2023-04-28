@@ -12,10 +12,15 @@
   {% include navbar.html %}
   <!-- Video Banner -->
   <div class="banner">
-    <video width="100%" height="auto" autoplay muted>
+    <video width="100%" height="auto" autoplay muted loop playsinline>
       <source src="{{ '/assets/video/hey-human-banner.mp4' | relative_url }}" type="video/mp4">
       Your browser does not support the video tag.
     </video>
+  </div>
+
+  <!-- Image and Text -->
+  <div class="image-text">
+    <img src="{{ '/assets/img/organizacion.png' | relative_url }}" alt="Hey, Human!" width="100%" height="auto">
   </div>
 
   <main>
