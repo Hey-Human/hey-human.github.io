@@ -19,10 +19,9 @@ author: Hey-Human! Team
 navbar-links:
   # Title of the navigation bar
   Inicio: "/"
-  Quiénes Somos: "quienes-somos"
-  About: "about"
-  Eventos: "eventos"
-  Contacto: "contacto"
+  Quiénes Somos: "about"
+  # Eventos: "eventos"
+  # Contacto: "contacto"
 
 ################
 # --- Logo --- #

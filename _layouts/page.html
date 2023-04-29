@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }}</title>
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+</head>
+
+<body>
+  {% include navbar.html %}
+  <!-- Video Banner -->
+  <div class="banner">
+    <video width="100%" height="auto" autoplay muted playsinline>
+      <source src="{{ '/assets/video/hey-human-banner.mp4' | relative_url }}" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <main>
+    {{ content }}
+  </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+          <p>&copy; {{ 'now' | date: "%Y" }} Hey, Human! | Todos los derechos reservados.</p>
+          <p><i class="fas fa-envelope"></i> <a href="mailto:severinidiegoignacio@gmail.com">info@heyhuman.org</a></p>
+          <p><a href="https://github.com/Hey-Human"><i class="fab fa-github"></i> Hey, Human!</a></p>
+        </div>
+      </footer>
+</body>
+
+</html>

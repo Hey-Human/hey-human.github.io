@@ -8,6 +8,7 @@
   /* Fonts */
   body {
     font-family: 'Arial', sans-serif;
+    background-color: #d5d5d5;
   }
   
   /* Navbar */
@@ -59,13 +60,13 @@
   /* Headings */
   h1 {
     font-size: 48px;
-    color: #34495e;
+    color: #555c7c;
     margin-bottom: 20px;
   }
   
   h2 {
     font-size: 36px;
-    color: #34495e;
+    color: #555c7c;
     margin-bottom: 10px;
   }
   
