@@ -19,9 +19,9 @@ Nos encanta trabajar con personas apasionadas y comprometidas con nuestra misió
 
 <div style="margin-top: 1em; margin-bottom: 1em;"></div>
 
-[Idear.io](https://hey-human.github.io/jekyll-ideas-sharing-template)
+[Idear.io](https://hey-human.github.io/idear.io)
 <div style="margin-top: 1em; margin-bottom: 1em;"></div>
-[tres-caras](https://hey-human.github.io/tres-caras/)
+[tres-caras](https://hey-human.github.io/tres-caras)
 
 <div style="margin-top: 1em; margin-bottom: 1em;"></div>
 #### Contacto
