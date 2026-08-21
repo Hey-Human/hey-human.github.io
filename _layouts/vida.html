@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }}</title>
+  <meta name="description" content="Vida — el lugar donde una familia se ve vivir. Reconocimiento, memoria y datos soberanos. Open-source (AGPL-3.0).">
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    .vida-page {
+      font-family: 'Source Sans 3', 'Helvetica Neue', Arial, sans-serif;
+      background: #faf6ef;
+      color: #33302b;
+      line-height: 1.65;
+    }
+    .vida-page main {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 0 24px 80px;
+    }
+    .vida-hero {
+      text-align: center;
+      padding: 88px 0 56px;
+    }
+    .vida-hero .brote { font-size: 40px; }
+    .vida-hero h1 {
+      font-family: 'Lora', Georgia, serif;
+      font-size: 56px;
+      color: #33302b;
+      margin: 8px 0 10px;
+      letter-spacing: 0.01em;
+    }
+    .vida-hero .lema {
+      font-family: 'Lora', Georgia, serif;
+      font-size: 22px;
+      font-style: italic;
+      color: #5a564e;
+      margin-bottom: 28px;
+    }
+    .vida-frase {
+      font-family: 'Lora', Georgia, serif;
+      font-size: 30px;
+      color: #3f6b4f;
+      margin: 36px 0;
+    }
+    .vida-botones { margin-top: 30px; }
+    .vida-botones a {
+      display: inline-block;
+      margin: 6px 8px;
+      padding: 12px 26px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 16px;
+    }
+    .vida-botones .primario { background: #3f6b4f; color: #faf6ef; }
+    .vida-botones .primario:hover { background: #33573f; }
+    .vida-botones .secundario { border: 1.5px solid #3f6b4f; color: #3f6b4f; }
+    .vida-botones .secundario:hover { background: #eee7da; }
+    .vida-page h2 {
+      font-family: 'Lora', Georgia, serif;
+      font-size: 28px;
+      color: #33302b;
+      margin: 64px 0 16px;
+    }
+    .vida-page p { margin-bottom: 14px; font-size: 18px; }
+    .vida-principios { list-style: none; margin: 0; padding: 0; }
+    .vida-principios li {
+      background: #fffdf8;
+      border: 1px solid #e8dfd0;
+      border-radius: 10px;
+      padding: 16px 20px;
+      margin-bottom: 12px;
+      font-size: 17px;
+    }
+    .vida-principios strong { color: #3f6b4f; }
+    .vida-cita {
+      border-left: 3px solid #3f6b4f;
+      padding: 6px 0 6px 20px;
+      margin: 24px 0;
+      font-family: 'Lora', Georgia, serif;
+      font-style: italic;
+      font-size: 19px;
+      color: #5a564e;
+    }
+    .vida-punto {
+      background: #fffdf8;
+      border: 1px solid #e8dfd0;
+      border-radius: 10px;
+      padding: 20px 24px;
+      margin-top: 20px;
+      font-size: 16px;
+    }
+    .vida-punto code {
+      background: #eee7da;
+      border-radius: 4px;
+      padding: 1px 6px;
+      font-size: 15px;
+    }
+    .vida-pie {
+      text-align: center;
+      margin-top: 72px;
+      font-family: 'Lora', Georgia, serif;
+      font-style: italic;
+      color: #5a564e;
+    }
+    .vida-page a { color: #3f6b4f; }
+    @media (max-width: 600px) {
+      .vida-hero h1 { font-size: 40px; }
+      .vida-frase { font-size: 24px; }
+    }
+  </style>
+</head>
+
+<body class="vida-page">
+  {% include navbar.html %}
+
+  <main>
+    {{ content }}
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <p>&copy; {{ 'now' | date: "%Y" }} Hey, Human! | Todos los derechos reservados.</p>
+      <p><a href="https://github.com/Hey-Human"><i class="fab fa-github"></i> Hey, Human!</a></p>
+    </div>
+  </footer>
+</body>
+
+</html>
