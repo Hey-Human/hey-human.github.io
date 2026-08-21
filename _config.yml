@@ -19,6 +19,7 @@ author: Hey-Human! Team
 navbar-links:
   # Title of the navigation bar
   Inicio: "/"
+  Vida: "vida"
   Quiénes Somos: "about"
   # Eventos: "eventos"
   # Contacto: "contacto"

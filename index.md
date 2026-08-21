@@ -7,7 +7,7 @@ title: "Hey, Human!"
 
 ¡Bienvenido a Hey, Human! Somos una organización dedicada a promover la conexión humana y la empatía en un mundo digitalizado. Creemos en el poder de la tecnología para mejorar nuestras vidas, pero también reconocemos la importancia de mantener nuestra humanidad en el proceso.
 
-Nuestro saludo —*Hey, Human!*— es también con el que **[Vida](#proyectos-destacados-)**, nuestro proyecto insignia, recibe a cada familia.
+Nuestro saludo —*Hey, Human!*— es también con el que **[Vida](/vida)**, nuestro proyecto insignia, recibe a cada familia.
 
 ## Nuestra misión 🎯
 
@@ -22,7 +22,7 @@ A través de estas técnicas, buscamos impulsar la innovación de manera conscie
 
 Estamos trabajando en varios proyectos que aplican nuestras técnicas de bioética en diferentes áreas, como la inteligencia artificial, la sostenibilidad y la salud. Estos son algunos de nuestros proyectos destacados:
 
-- 🌱 **Vida** *(proyecto insignia · open-source, próximamente)*: el lugar donde una familia se ve vivir. Una máquina de reconocer — *“Te vi. Lo lograste.”* — con recordatorios y comunicación en un solo lugar de confianza, y datos que son de la familia y de nadie más.
+- 🌱 **[Vida](/vida)** *(proyecto insignia · [open-source](https://github.com/Hey-Human/vida))*: el lugar donde una familia se ve vivir. Una máquina de reconocer — *“Te vi. Lo lograste.”* — con recordatorios y comunicación en un solo lugar de confianza, y datos que son de la familia y de nadie más.
 
 - [Idear.io](https://hey-human.github.io/idear.io/): Una plataforma para compartir y discutir ideas innovadoras.
 
