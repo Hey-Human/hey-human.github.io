@@ -42,7 +42,7 @@ round-avatar: true
 # Select the social network links that you want to show in the footer.
 # Uncomment the links you want to show and add your information to each one.
 social-network-links:
-  email: "contacto@hey-human.org"
+  # email: (sin casilla propia por ahora — el contacto es GitHub)
   twitter: hey_human_org
   facebook: heyhumanorg
   instagram: hey_human_org
