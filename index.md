@@ -17,4 +17,4 @@ Nuestro saludo —*Hey, Human!*— es también con el que **[Vida](/vida)**, nue
 
 ## Sumate 👋
 
-¿Te interesa un mundo más empático y consciente? [Escribinos](mailto:contacto@hey-human.org) o contribuí en [GitHub](https://github.com/Hey-Human).
+¿Te interesa un mundo más empático y consciente? Contribuí o abrinos una conversación en [GitHub](https://github.com/Hey-Human).
