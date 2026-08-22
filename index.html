@@ -1,0 +1,339 @@
+---
+---
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hey, Human! — Tecnología que nos deja más humanos</title>
+<meta name="description" content="Hey, Human! es una organización open-source que promueve la conexión humana y la empatía en un mundo digitalizado. Su proyecto insignia es Vida.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --papel:#faf6ef;
+    --papel-hondo:#f3ecdf;
+    --tinta:#33302b;
+    --tinta-suave:#6b655c;
+    --verde:#3f6b4f;
+    --verde-hondo:#33573f;
+    --verde-tenue:rgba(63,107,79,.14);
+    --linea:rgba(51,48,43,.14);
+    --serif:"Lora", Georgia, "Times New Roman", serif;
+    --sans:"Source Sans 3", "Helvetica Neue", Arial, sans-serif;
+    --ancho:68rem;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  @media (prefers-reduced-motion: reduce){ html{scroll-behavior:auto} }
+  body{
+    background:var(--papel);
+    color:var(--tinta);
+    font-family:var(--sans);
+    font-size:1.0625rem;
+    line-height:1.65;
+    overflow-x:hidden;
+  }
+  a{color:var(--verde)}
+  ::selection{background:var(--verde-tenue)}
+
+  /* ————— El trazo: sistema de línea continua ————— */
+  .trazo{
+    stroke:var(--verde);
+    stroke-width:2.6;
+    fill:none;
+    stroke-linecap:round;
+    stroke-linejoin:round;
+    stroke-dasharray:1;
+    stroke-dashoffset:1;
+    transition:stroke-dashoffset 2.2s cubic-bezier(.45,.05,.35,1);
+  }
+  .dibujado .trazo{stroke-dashoffset:0}
+  .trazo-tinta{stroke:var(--tinta)}
+  .hilo{display:block;margin:0 auto;height:clamp(5rem,12vw,8.5rem);width:auto}
+  .hilo .trazo{stroke-width:2;transition-duration:1.6s}
+  @media (prefers-reduced-motion: reduce){
+    .trazo{stroke-dashoffset:0;transition:none}
+  }
+
+  /* ————— Navbar ————— */
+  header{
+    position:sticky;top:0;z-index:10;
+    background:rgba(250,246,239,.92);
+    backdrop-filter:blur(6px);
+    border-bottom:1px solid var(--linea);
+  }
+  .nav{
+    max-width:var(--ancho);margin:0 auto;
+    padding:.85rem 1.25rem;
+    display:flex;align-items:center;justify-content:space-between;gap:1rem;
+  }
+  .marca{
+    display:flex;align-items:center;gap:.55rem;
+    font-family:var(--serif);font-weight:600;font-size:1.15rem;
+    color:var(--tinta);text-decoration:none;white-space:nowrap;
+  }
+  .marca svg{width:1.6rem;height:auto;flex:none}
+  .nav ul{display:flex;gap:clamp(.9rem,3vw,2rem);list-style:none}
+  .nav ul a{
+    color:var(--tinta);text-decoration:none;font-weight:600;
+    font-size:.95rem;letter-spacing:.01em;padding:.2rem 0;
+    background:linear-gradient(var(--verde),var(--verde)) left bottom / 0 2px no-repeat;
+    transition:background-size .3s ease;
+  }
+  .nav ul a:hover,.nav ul a:focus-visible{background-size:100% 2px;color:var(--verde-hondo)}
+
+  /* ————— Layout común ————— */
+  section{padding:0 1.25rem}
+  .caja{max-width:var(--ancho);margin:0 auto}
+  .ojal{
+    font-family:var(--sans);font-weight:700;font-size:.8rem;
+    letter-spacing:.18em;text-transform:uppercase;color:var(--verde);
+    display:inline-flex;align-items:center;gap:.6rem;
+  }
+  .ojal::before{content:"";display:inline-block;width:2.2rem;height:2px;background:var(--verde);border-radius:2px}
+  h1,h2,h3{font-family:var(--serif);font-weight:500;line-height:1.15;text-wrap:balance}
+
+  /* ————— Hero ————— */
+  .hero{padding-top:clamp(3.5rem,9vw,6.5rem);text-align:center}
+  .hero .kicker{
+    font-family:var(--sans);font-weight:700;font-size:.82rem;
+    letter-spacing:.2em;text-transform:uppercase;color:var(--tinta-suave);
+    margin-bottom:1.1rem;
+  }
+  .hero h1{
+    font-size:clamp(2.9rem,9vw,5.5rem);
+    letter-spacing:-.01em;
+  }
+  .hero h1 em{font-style:italic;color:var(--verde)}
+  .hero p{
+    max-width:38rem;margin:1.4rem auto 0;
+    font-size:clamp(1.1rem,2.4vw,1.3rem);color:var(--tinta-suave);
+  }
+  .hero p strong{color:var(--tinta);font-weight:600}
+  .hero-corazon{width:clamp(9rem,22vw,13rem);height:auto;margin:2.2rem auto 0;display:block}
+
+  /* ————— Vida: proyecto insignia ————— */
+  .vida .caja{
+    background:#fffdf8;
+    border:1px solid var(--linea);
+    border-radius:1.25rem;
+    padding:clamp(1.75rem,5vw,3.5rem);
+    box-shadow:0 1.5rem 3rem -2.2rem rgba(51,48,43,.35);
+    position:relative;
+  }
+  .vida h2{font-size:clamp(2.2rem,6vw,3.4rem);margin-top:.9rem}
+  .vida .bajada{font-family:var(--serif);font-style:italic;font-size:clamp(1.15rem,2.6vw,1.45rem);color:var(--tinta-suave);margin-top:.4rem}
+  .vida-cuerpo{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(1.5rem,4vw,3rem);margin-top:1.8rem;align-items:start}
+  .vida-cuerpo>p{font-size:1.1rem}
+  .frase{
+    margin-top:1.6rem;padding-left:1.1rem;border-left:3px solid var(--verde);
+    font-family:var(--serif);font-size:clamp(1.35rem,3vw,1.7rem);line-height:1.35;
+  }
+  .frase footer{font-family:var(--sans);font-size:.85rem;color:var(--tinta-suave);margin-top:.4rem;font-style:normal}
+  .principios{list-style:none;display:grid;gap:.9rem}
+  .principios li{
+    background:var(--papel);
+    border:1px solid var(--linea);
+    border-radius:.85rem;
+    padding:1rem 1.15rem;
+  }
+  .principios strong{display:block;font-family:var(--serif);font-weight:600;font-size:1.08rem;margin-bottom:.15rem}
+  .principios span{color:var(--tinta-suave);font-size:.97rem}
+  .botones{display:flex;flex-wrap:wrap;gap:.85rem;margin-top:2rem}
+  .boton{
+    display:inline-block;text-decoration:none;font-weight:700;font-size:1rem;
+    padding:.8rem 1.6rem;border-radius:999px;transition:transform .15s ease, background .2s ease, color .2s ease;
+  }
+  .boton:active{transform:scale(.97)}
+  .boton-lleno{background:var(--verde);color:var(--papel)}
+  .boton-lleno:hover,.boton-lleno:focus-visible{background:var(--verde-hondo)}
+  .boton-linea{border:2px solid var(--verde);color:var(--verde)}
+  .boton-linea:hover,.boton-linea:focus-visible{background:var(--verde-tenue)}
+
+  /* ————— Otros proyectos ————— */
+  .otros h2{font-size:clamp(1.8rem,4.5vw,2.5rem);margin-top:.9rem}
+  .otros .intro{color:var(--tinta-suave);max-width:34rem;margin-top:.6rem}
+  .tarjetas{display:grid;grid-template-columns:repeat(auto-fit,minmax(16rem,1fr));gap:1.1rem;margin-top:2rem}
+  .tarjeta{
+    display:block;text-decoration:none;color:var(--tinta);
+    border:1px solid var(--linea);border-radius:1rem;
+    padding:1.5rem 1.5rem 1.4rem;background:#fffdf8;
+    transition:border-color .2s ease, transform .2s ease, box-shadow .2s ease;
+  }
+  .tarjeta:hover,.tarjeta:focus-visible{
+    border-color:var(--verde);transform:translateY(-3px);
+    box-shadow:0 1rem 2rem -1.6rem rgba(51,48,43,.5);
+  }
+  .tarjeta h3{font-size:1.35rem}
+  .tarjeta p{color:var(--tinta-suave);margin-top:.4rem;font-size:.98rem}
+  .tarjeta .ir{display:inline-block;margin-top:.9rem;font-weight:700;font-size:.9rem;color:var(--verde)}
+  .tarjeta:hover .ir::after{transform:translateX(4px)}
+  .ir::after{content:"→";display:inline-block;margin-left:.35rem;transition:transform .2s ease}
+
+  /* ————— Sumate ————— */
+  .sumate{text-align:center}
+  .sumate .caja{
+    background:var(--verde);color:var(--papel);
+    border-radius:1.25rem;
+    padding:clamp(2.5rem,7vw,4.5rem) clamp(1.5rem,5vw,3rem);
+  }
+  .sumate h2{font-size:clamp(2rem,5.5vw,3rem)}
+  .sumate p{max-width:36rem;margin:1.1rem auto 0;color:rgba(250,246,239,.88);font-size:1.08rem}
+  .sumate .boton{margin-top:1.8rem;background:var(--papel);color:var(--verde-hondo)}
+  .sumate .boton:hover,.sumate .boton:focus-visible{background:#fff}
+  .sumate .trazo{stroke:var(--papel)}
+  .sumate svg{width:6.5rem;height:auto;margin:0 auto 1.2rem;display:block}
+
+  /* ————— Footer ————— */
+  footer.pie{border-top:1px solid var(--linea);margin-top:clamp(3rem,8vw,5rem)}
+  .pie .caja{
+    max-width:var(--ancho);margin:0 auto;padding:1.6rem 1.25rem;
+    display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap;
+    font-size:.92rem;color:var(--tinta-suave);
+  }
+  .pie a{color:var(--verde);font-weight:600;text-decoration:none}
+  .pie a:hover,.pie a:focus-visible{text-decoration:underline}
+
+  /* ————— Responsive ————— */
+  @media (max-width:47rem){
+    .vida-cuerpo{grid-template-columns:1fr}
+    .nav{flex-direction:column;gap:.5rem;padding-bottom:.7rem}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <nav class="nav" aria-label="Principal">
+    <a class="marca" href="/">
+      <svg viewBox="0 0 122 106" aria-hidden="true"><path class="trazo trazo-tinta" style="stroke-dashoffset:0" pathLength="1" d="M6 34 C14 12 40 8 52 26 C58 34 60 40 61 46 C62 40 64 34 70 26 C82 8 108 12 116 34 C122 52 97 68 61 98 C39 80 21 68 11 52"/></svg>
+      Hey, Human!
+    </a>
+    <ul>
+      <li><a href="/">Inicio</a></li>
+      <li><a href="/vida">Vida</a></li>
+      <li><a href="/about">Quiénes Somos</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="caja">
+      <p class="kicker">Una organización open source que es, literalmente, un saludo</p>
+      <h1>Hey, <em>Human</em>.</h1>
+      <p>Somos una organización open-source que hace una apuesta simple: <strong>la mejor tecnología es la que nos deja más humanos.</strong> Innovación consciente, bioética aplicada, y software que se mide por la conexión que provoca — no por las horas que retiene.</p>
+      <svg class="hero-corazon dibujable" viewBox="0 0 122 112" role="img" aria-label="Corazón dibujado con una sola línea continua">
+        <path class="trazo" pathLength="1" d="M61 106 C55 90 40 82 26 72 C12 62 2 50 6 34 C10 16 34 8 48 20 C56 27 59 36 61 44 C63 36 66 27 74 20 C88 8 112 16 116 34 C120 50 110 62 96 72 C84 80 72 88 66 100"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- hilo: hero → vida -->
+  <svg class="hilo dibujable" viewBox="0 0 100 140" aria-hidden="true" preserveAspectRatio="xMidYMid meet">
+    <path class="trazo" pathLength="1" d="M50 2 C50 34 26 44 34 74 C40 96 60 100 52 138"/>
+  </svg>
+
+  <!-- VIDA -->
+  <section class="vida" id="vida">
+    <div class="caja">
+      <span class="ojal">Proyecto insignia</span>
+      <h2>Vida</h2>
+      <p class="bajada">El lugar donde una familia se ve vivir.</p>
+      <div class="vida-cuerpo">
+        <div>
+          <p>Vida es una máquina de reconocer: una app pensada para que los logros de cada integrante de la familia no pasen de largo, sino que alguien los mire y los nombre. No aplaude un algoritmo — te aplaude tu gente.</p>
+          <blockquote class="frase">
+            «Te vi. Lo lograste.»
+            <footer>La frase que Vida existe para provocar.</footer>
+          </blockquote>
+        </div>
+        <ul class="principios">
+          <li><strong>El que reconoce es un humano, nunca la app.</strong><span>El aplauso siempre tiene nombre propio. Vida solo acerca la ocasión.</span></li>
+          <li><strong>La app gana cuando apagás la pantalla.</strong><span>Su éxito se mide afuera: en la mesa, en el abrazo, en la mirada.</span></li>
+          <li><strong>Los datos son de la familia.</strong><span>Lo que una familia vive le pertenece a esa familia. Punto.</span></li>
+        </ul>
+      </div>
+      <div class="botones">
+        <a class="boton boton-lleno" href="/vida">Conocé Vida</a>
+        <a class="boton boton-linea" href="https://github.com/Hey-Human/vida">Ver el código en GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- hilo: vida → otros -->
+  <svg class="hilo dibujable" viewBox="0 0 100 140" aria-hidden="true" preserveAspectRatio="xMidYMid meet">
+    <path class="trazo" pathLength="1" d="M52 2 C44 36 70 48 62 76 C56 98 42 106 50 138"/>
+  </svg>
+
+  <!-- OTROS PROYECTOS -->
+  <section class="otros">
+    <div class="caja">
+      <span class="ojal">El mismo trazo, otras formas</span>
+      <h2>Otros proyectos</h2>
+      <p class="intro">Ideas más chicas que nacen de la misma línea: pensar en voz alta y con cuidado cómo lo digital toca lo humano.</p>
+      <div class="tarjetas">
+        <a class="tarjeta" href="https://hey-human.github.io/idear.io/">
+          <h3>Idear.io</h3>
+          <p>Una plataforma para compartir y discutir ideas. Porque las buenas conversaciones también se diseñan.</p>
+          <span class="ir">Visitar</span>
+        </a>
+        <a class="tarjeta" href="https://hey-human.github.io/tres-caras/">
+          <h3>Tres Caras</h3>
+          <p>Principios de bioética aplicados: un marco para decidir con conciencia cuando la tecnología toca la vida.</p>
+          <span class="ir">Visitar</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- hilo: otros → sumate -->
+  <svg class="hilo dibujable" viewBox="0 0 100 140" aria-hidden="true" preserveAspectRatio="xMidYMid meet">
+    <path class="trazo" pathLength="1" d="M50 2 C56 32 30 46 38 76 C44 98 58 104 50 138"/>
+  </svg>
+
+  <!-- SUMATE -->
+  <section class="sumate">
+    <div class="caja dibujable">
+      <svg viewBox="0 0 122 106" aria-hidden="true">
+        <path class="trazo" pathLength="1" d="M6 34 C14 12 40 8 52 26 C58 34 60 40 61 46 C62 40 64 34 70 26 C82 8 108 12 116 34 C122 52 97 68 61 98 C39 80 21 68 11 52"/>
+      </svg>
+      <h2>El trazo recién empieza. Sumate.</h2>
+      <p>Hey, Human! está naciendo, y eso es parte de su belleza: no hay métricas infladas ni comunidades imaginarias — hay código abierto y una convicción. Si algo de esto te resuena, el repositorio te espera.</p>
+      <a class="boton" href="https://github.com/Hey-Human">Contribuí en GitHub</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="pie">
+  <div class="caja">
+    <span>© 2026 Hey, Human! — hecho a mano, de una sola línea.</span>
+    <a href="https://github.com/Hey-Human">GitHub</a>
+  </div>
+</footer>
+
+<script>
+  // Decorativo: dibuja cada trazo cuando entra al viewport. Sin movimiento si el usuario lo prefiere.
+  (function(){
+    var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    var todos = document.querySelectorAll(".dibujable");
+    if (reduce || !("IntersectionObserver" in window)) {
+      todos.forEach(function(el){ el.classList.add("dibujado"); });
+      return;
+    }
+    var io = new IntersectionObserver(function(entradas){
+      entradas.forEach(function(e){
+        if (e.isIntersecting) { e.target.classList.add("dibujado"); io.unobserve(e.target); }
+      });
+    }, { threshold: 0.35 });
+    todos.forEach(function(el){ io.observe(el); });
+  })();
+</script>
+
+</body>
+</html>
